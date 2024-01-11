@@ -1,0 +1,9 @@
+image: cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1
+stages:
+ - cypress-test-automation
+
+Cyrpress-test_prod:
+  stage: cypress-test-automation
+  script:
+    - npm install cypress --force
+    - npx cypress run --record --key c7e8bd69-e5d6-46d7-93b9-ed6e0142cdc0
